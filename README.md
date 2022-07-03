@@ -7,6 +7,7 @@ have no IT experience at all to those who know basically everything.
 
 
 --
+
     The Digispark-keystrokes.txt file is made up of two parts. The first part is a cheatsheet to the keystrokes (work in progress), and the second part is an
     explanation to the build up of a payload and what the individual parts do (work in progress).
 --
@@ -23,5 +24,6 @@ have no IT experience at all to those who know basically everything.
 
 
 --
+
     I will add a file called "A guide to Digikeyboard coding" which will explain all the commands, keyboard shortcuts that can be made and some basic scripts.
 --
