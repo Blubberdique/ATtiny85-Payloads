@@ -1,0 +1,25 @@
+//-- This is a cheatsheet for the keystrokes --\\
+
+    Keystroke   letter:         KEY_A KEY_B KEY_C       ... etc
+    Keystroke   number:         KEY_1 KEY_2 KEY_3       ... etc
+    Keystroke   FN:             KEY_F1 KEY_F2 KEY_F3    ... etc  
+    Keystroke   space:          KEY_SPACE
+    Keystroke   enter:          KEY_ENTER
+    Keystroke   left Windows:   MOD_GUI_LEFT
+    Keystroke   right Windows:  MOD_GUI_RIGHT
+    Keystroke   left control:   MOD_CONTROL_LEFT
+    Keystroke   right control:  MOD_CONTROL_RIGHT
+    Keystroke   left shift:     MOD_SHIFT_LEFT
+    Keystroke   right shift:    MOD_SHIFT_RIGHT
+    Keystroke   left alt:       MOD_ALT_LEFT
+    Keystroke   right alt:      MOD_ALT_RIGHTS
+
+To press two keys at once, seperate them with a comma in the script.
+
+    //-- This keystroke opens up the Run prompt --\\
+    DigiKeyboard.sendKeyStroke(KEY_R , MOD_GUI_LEFT);
+
+To press three keys at once, seperate the first two with a comma, and seperate the last with a | in the script.
+
+    //-- This keystroke copies a screenshot to the clipboard --\\
+    DigiKeyboard.sendKeyStroke(KEY_S , MOD_GUI_LEFT | MOD_SHIFT_LEFT);
