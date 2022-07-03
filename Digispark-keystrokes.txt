@@ -23,3 +23,57 @@ To press three keys at once, seperate the first two with a comma, and seperate t
 
     //-- This keystroke copies a screenshot to the clipboard --\\
     DigiKeyboard.sendKeyStroke(KEY_S , MOD_GUI_LEFT | MOD_SHIFT_LEFT);
+
+
+//-- This is a cheatsheet for the buildup of a payload file --\\
+
+To make comments. you can start with /' , type in the comment after pressing enter and tab, press enter again and end with '/.
+As an example:
+
+/'
+    This is an example comment.
+'/
+
+Another way (and simpler way) to make comments is by using //.
+As an example:
+
+// This is an example comment.
+
+
+
+For payloads, ALWAYS start the script with: #include "DigiKeyboard.h". This is to ensure that the right library is loaded,
+otherwise the payload wil not be able to type.
+
+A part which is put in void loop to ensure the payload will run smoothly is the following;
+  DigiKeyboard.update();
+  DigiKeyboard.sendKeyStroke(0);
+  DigiKeyboard.delay(3000);
+
+void setup is
+void loop is 
+
+So as an example for the makeup of the file:
+
+/'
+    This is an example file, it will open up Google.com.
+'/
+
+#include "DigiKeyboard"
+
+void setup() {
+    // Put your setup code here, to run once:
+
+}
+
+void loop() {
+
+    DigiKeyboard.update();
+    DigiKeyboard.sendKeyStroke(0);
+    DigiKeyboard.delay(3000);
+
+    DigiKeyboard.sendKeyStroke(KEY_R , MOD_GUI_LEFT); //starts Run
+    DigiKeyboard.delay(100);
+    DigiKeyboard.print(http://www.google.com);
+    DigiKeyboard.sendKeyStroke(KEY_ENTER);
+ 
+}

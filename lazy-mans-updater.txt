@@ -1,0 +1,35 @@
+// This payload will enable me to update without physically typing or selecting anything.
+//! PLEASE DO NOTE! THIS IS TESTED ON WINDOWS 10!
+// Not to worry, there will be a dedicated Windows 11 version of this too. 
+
+void setup() {
+  // Put your setup code here, to run once:
+
+}
+
+void loop() {
+
+  DigiKeyboard.update();
+  DigiKeyboard.sendKeyStroke(0);
+  DigiKeyboard.delay(3000);
+
+  DigiKeyboard.sendKeyStroke(MOD_GUI_LEFT); //Opens the Start panel
+  DigiKeyboard.delay(100);
+  DigiKeyboard.print(Check for updates);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER); 
+  DigiKeyboard.delay(500); //Opens up Windows Updater
+  DigiKeyboard.write('\t');
+  DigiKeyboard.write('\t');
+  DigiKeyboard.write('\t');
+  DigiKeyboard.write('\t');
+  DigiKeyboard.delay(3000);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER); // Presses "Search for updates" or "Install now"
+  DigiKeyboard.delay(100);
+
+  DigiKeyboard.sendKeyStroke(MOD_GUI_LEFT); //Opens the Start panel
+  DigiKeyboard.delay(100);
+  DigiKeyboard.print(intel driver & support assistant);
+  DigiKeyboard,sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(500); //Opens up Intel Driver & Support Assistant
+
+}
