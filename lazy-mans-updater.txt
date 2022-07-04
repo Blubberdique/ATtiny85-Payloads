@@ -18,10 +18,9 @@ void loop() {
   DigiKeyboard.print(Check for updates);
   DigiKeyboard.sendKeyStroke(KEY_ENTER); 
   DigiKeyboard.delay(500); //Opens up Windows Updater
-  DigiKeyboard.write('\t');
-  DigiKeyboard.write('\t');
-  DigiKeyboard.write('\t');
-  DigiKeyboard.write('\t');
+  DigiKeyboard.sendKeyStroke(KEY_TAB);
+  DigiKeyboard.sendKeyStroke(KEY_TAB);
+  DigiKeyboard.sendKeyStroke(KEY_TAB);
   DigiKeyboard.delay(3000);
   DigiKeyboard.sendKeyStroke(KEY_ENTER); // Presses "Search for updates" or "Install now"
   DigiKeyboard.delay(100);

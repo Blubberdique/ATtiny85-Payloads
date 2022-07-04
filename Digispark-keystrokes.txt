@@ -1,8 +1,8 @@
 //-- This is a cheatsheet for the keystrokes --\\
 
-    Keystroke   letter:         KEY_A KEY_B KEY_C       ... etc
-    Keystroke   number:         KEY_1 KEY_2 KEY_3       ... etc
-    Keystroke   FN:             KEY_F1 KEY_F2 KEY_F3    ... etc  
+    Keystroke   letter:         KEY_A KEY_B KEY_C           ... etc
+    Keystroke   number:         KEY_1 KEY_2 KEY_3           ... etc
+    Keystroke   FN:             KEY_F1 KEY_F2 KEY_F3        ... etc  
     Keystroke   space:          KEY_SPACE
     Keystroke   enter:          KEY_ENTER
     Keystroke   left Windows:   MOD_GUI_LEFT
@@ -13,6 +13,17 @@
     Keystroke   right shift:    MOD_SHIFT_RIGHT
     Keystroke   left alt:       MOD_ALT_LEFT
     Keystroke   right alt:      MOD_ALT_RIGHTS
+    Keystroke   arrow:          KEY_UP_ARROW KEY_DOWN_ARROW ... etc
+    Keystroke   backspace:      KEY_BACKSPACE
+    Keystroke   tab:            KEY_TAB
+    Keystroke   return:         KEY_RETURN
+    Keystroke   escape:         KEY_ESC
+    Keystroke   insert:         KEY_INSERT
+    Keystroke   delete:         KEY_DELETE
+    Keystroke   page up/down:   KEY_PAGE_UP KEY_PAGE_DOWN
+    Keystroke   home:           KEY_HOME
+    Keystroke   end:            KEY_PAGE_DOWN
+    Keystroke   caps lock:      KEY_CAPS_LOCK
 
 To press two keys at once, seperate them with a comma in the script.
 
@@ -49,14 +60,12 @@ A part which is put in void loop to ensure the payload will run smoothly is the 
   DigiKeyboard.sendKeyStroke(0);
   DigiKeyboard.delay(3000);
 
-void setup is
-void loop is 
+void setup is meant for code which runs only once.
+void loop is meant for code which keeps looping.
 
 So as an example for the makeup of the file:
 
-/'
-    This is an example file, it will open up Google.com.
-'/
+    // This is an example file, it will open up Google.com.
 
 #include "DigiKeyboard"
 
