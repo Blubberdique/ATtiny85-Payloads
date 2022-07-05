@@ -15,11 +15,14 @@
     Keystroke   right alt:      MOD_ALT_RIGHT
 
 In order to (re)assign keys, use the following for reference:
-  -https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
+  -https://cdn.hackaday.io/files/10446446921664/DigiKeyboard_6keys.h
 
 The actual code to (re)assign keys:
 #define KEY_(KEY) 0x(XX)
-So as an example: #define KEY_DOWN 0x51
+Examples of this code in action: 
+#define KEY_DOWN 0x51 // Keyboard arrow down
+#define KEY_TAB 0x2B // TAB key
+
 
 
 

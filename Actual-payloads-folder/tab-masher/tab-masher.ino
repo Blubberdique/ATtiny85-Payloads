@@ -1,7 +1,7 @@
 // This payloads mashes the TAB key 20 times.
 
 #include "DigiKeyboard.h"
-#define KEY_TAB 0x09 // TAB key
+#define KEY_TAB 0x2B // TAB key
 
 void setup() {
     // Remains empty

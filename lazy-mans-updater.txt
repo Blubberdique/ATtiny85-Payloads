@@ -2,6 +2,9 @@
 //! PLEASE DO NOTE! THIS IS TESTED ON WINDOWS 10!
 // Not to worry, there will be a dedicated Windows 11 version of this too. 
 
+#include "DigiKeyboard.h"
+#define KEY_TAB 0x2B
+
 void setup() {
   // Put your setup code here, to run once:
 
