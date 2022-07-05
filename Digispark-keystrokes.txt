@@ -12,18 +12,16 @@
     Keystroke   left shift:     MOD_SHIFT_LEFT
     Keystroke   right shift:    MOD_SHIFT_RIGHT
     Keystroke   left alt:       MOD_ALT_LEFT
-    Keystroke   right alt:      MOD_ALT_RIGHTS
-    Keystroke   arrow:          KEY_UP_ARROW KEY_DOWN_ARROW ... etc
-    Keystroke   backspace:      KEY_BACKSPACE
-    Keystroke   tab:            KEY_TAB
-    Keystroke   return:         KEY_RETURN
-    Keystroke   escape:         KEY_ESC
-    Keystroke   insert:         KEY_INSERT
-    Keystroke   delete:         KEY_DELETE
-    Keystroke   page up/down:   KEY_PAGE_UP KEY_PAGE_DOWN
-    Keystroke   home:           KEY_HOME
-    Keystroke   end:            KEY_PAGE_DOWN
-    Keystroke   caps lock:      KEY_CAPS_LOCK
+    Keystroke   right alt:      MOD_ALT_RIGHT
+
+In order to (re)assign keys, use the following for reference:
+  -https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
+
+The actual code to (re)assign keys:
+#define KEY_(KEY) 0x(XX)
+So as an example: #define KEY_DOWN 0x51
+
+
 
 To press two keys at once, seperate them with a comma in the script.
 
@@ -36,16 +34,10 @@ To press three keys at once, seperate the first two with a comma, and seperate t
     DigiKeyboard.sendKeyStroke(KEY_S , MOD_GUI_LEFT | MOD_SHIFT_LEFT);
 
 
+
 //-- This is a cheatsheet for the buildup of a payload file --\\
 
-To make comments. you can start with /' , type in the comment after pressing enter and tab, press enter again and end with '/.
-As an example:
-
-/'
-    This is an example comment.
-'/
-
-Another way (and simpler way) to make comments is by using //.
+A way to make comments is by using //.
 As an example:
 
 // This is an example comment.
