@@ -20,3 +20,5 @@ void loop() {
   DigiKeyboard.sendKeyStroke(MOD_ALT_LEFT , KEY_TAB);
   DigiKeyboard.sendKeyStroke(MOD_ALT_LEFT , KEY_TAB);
   DigiKeyboard.sendKeyStroke(MOD_ALT_LEFT , KEY_TAB);
+
+}
