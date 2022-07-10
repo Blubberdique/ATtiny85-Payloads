@@ -238,13 +238,17 @@
 #define KEY_R_GUI             0xE7     // Keyboard Right GUI
 
 
-
+--- ASSIGN/REASSIGN KEYS ---
 In order to (re)assign keys, use the following for reference:
   -https://cdn.hackaday.io/files/10446446921664/DigiKeyboard_6keys.h
 
+
+
 The actual code to (re)assign keys:
 #define KEY_(KEY) 0x(XX)
+
 Examples of this code in action: 
+
 #define KEY_DOWN 0x51 // Keyboard arrow down
 #define KEY_TAB 0x2B // TAB key
 
@@ -287,7 +291,7 @@ So as an example for the makeup of the file:
 
     // This is an example file, it will open up Google.com.
 
-#include "DigiKeyboard"
+#include "DigiKeyboard.h"
 
 void setup() {
     // Put your setup code here, to run once:
